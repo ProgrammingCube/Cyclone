@@ -1,0 +1,78 @@
+# GravityDash3D -- Level v12: The Feature Showcase
+# This level demonstrates every mechanic in the game engine.
+
+# --- Global Settings ---
+music assets/rhythm_track.ogg
+speed 1.25 # A bit faster for excitement
+
+# ---- Start and entry tunnel ----
+
+platform 0      -5      -40     15  1   100                     # runway
+
+platform 0 -5 -110  10 1 10                                     # platform 1
+platform 0 -3 -125  10 1 10                                     # platform 2
+platform 0 -1 -140  10 1 10                                     # platform 3
+platform 0 -3 -155  10 1 10                                     # platform 4
+spike    0 -2 -152.5  UP                                          # jump over spike
+
+gravity  -170   RIGHT                                           # gravity switch
+
+platform 5 0 -230 1 15 100                                      # landing pad
+spike 5 -7 -200 RIGHT                                            # dodge spike or fall off
+
+spike 4.5 -7 -250 RIGHT
+spike 4.5 -5 -250 RIGHT
+spike 4.5 -3 -250 RIGHT
+spike 4.5 -1 -250 RIGHT
+spike 4.5 1 -250 RIGHT
+spike 4.5 3 -250 RIGHT
+spike 4.5 5 -250 RIGHT
+spike 4.5 7 -250 RIGHT
+spike 4.5 -6 -260 RIGHT                                         # wall of spikes to dodge
+spike 4.5 -4 -260 RIGHT
+spike 4.5 -2 -260 RIGHT
+spike 4.5 0 -260 RIGHT
+spike 4.5 2 -260 RIGHT
+spike 4.5 4 -260 RIGHT
+spike 4.5 6 -260 RIGHT
+spike 4.5 8 -260 RIGHT
+
+platform 5 19 -270 1 8 40                                     # platform to move to
+
+camera_spin -270 0 0 1 360.0 1.5
+gravity -270 LEFT
+gravity -285 RIGHT
+gravity -300 LEFT
+gravity -315 RIGHT
+platform 0 19 -285 1 8 10                                     # don't jump
+platform 5 19 -300 1 8 10
+platform 0 19 -315 1 8 10
+platform 5 19 -330 1 8 10
+
+gravity -330 DOWN                                              # change gravity
+platform 0 20 -350 20 20 20
+
+platform 0 0 -355 10 1 20
+rotate -355 0 0 1 180.0 1.0                                     # rotate world
+# now upside down
+platform 0 -10 -390 10 1 20                                     # upside down landing
+
+platform 5 -10  -420 10 1 10                                     # upside down jump weave
+platform -5 -10 -450 10 1 10
+platform 5 -10  -480 10 1 10
+
+rotate -500 0 0 1 0.0 0.5                                       # rotate correctly
+#gravity -500 DOWN                                               # reset gravity
+
+platform 0 -20  -520 10 1 20
+
+# fall onto a jump pad
+jumppad 0 -30 -553
+
+platform 0 -25 -585 10 1 10
+platform 0 -23 -600 10 1 5
+platform 0 -20 -615 10 1 5
+
+#jumppad
+
+#rotate to right wall
