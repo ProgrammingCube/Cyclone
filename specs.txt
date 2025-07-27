@@ -1,0 +1,29 @@
+This will be a 3D rhythm game with mechanics similar to Geometry Dash
+
+However, these will be the core gameplay mechanics:
+
+1. Player will have a trail behind him to show movement
+2. Player will be center of motion UNLESS OTHERWISE SCRIPTED
+3. Platforms will be used to maneuver, spikes will be obstacles, jump pads will be used for large
+   jumps
+4. Gravity can shift UP, DOWN, LEFT, and RIGHT. Later, perhaps gravity can shift FORWARD and
+   BACKWARD to pair with rotations
+5. Player cube can rotate freely
+6. Entire scene can rotate freely or relatively to current global rotation
+7. Scenery can rotate around player irregardless of gravity vector
+8. Paired with previous, shifts will be triggered by crossing Z planes
+9. Win state is reaching end of level
+10. When player "dies", a cube breaking animation is played
+11. Music can be added in to level
+12. Simple sound effects and/or controller vibration will be added for jump, landing, death,
+    jumppads
+
+
+
+Objects need:
+   - type
+   - mesh
+   - world coords
+   - dimensions
+   - world orientation
+   - shader
